@@ -1,0 +1,17 @@
+:host {
+    position: fixed;
+    margin: auto;
+    width: calc(100% - 80px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.question-text {
+    margin-bottom: 10px;
+}

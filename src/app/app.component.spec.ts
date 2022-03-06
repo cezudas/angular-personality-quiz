@@ -1,12 +1,16 @@
 import { TestBed } from '@angular/core/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { SharedModule } from './shared/shared.module';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        SharedModule,
+        NoopAnimationsModule
       ],
       declarations: [
         AppComponent
@@ -26,10 +30,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('personality-trait-quiz');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('personality-trait-quiz app is running!');
-  });
 });

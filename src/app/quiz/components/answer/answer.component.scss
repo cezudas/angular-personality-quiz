@@ -1,0 +1,21 @@
+
+:host {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 0.0625rem solid #ccd6e0;
+    border-radius: 0.25rem;
+    padding: 10px;
+}
+
+.letter {
+    margin-right: 10px;
+    background-color: #f5f7f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;; 
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 0.25rem;
+}
