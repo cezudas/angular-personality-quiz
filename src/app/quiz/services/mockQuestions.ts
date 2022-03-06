@@ -1,0 +1,266 @@
+import { QuizQuestion } from '../types/quiz-question';
+
+const data: QuizQuestion[] = [
+  {
+    questionText:
+      'You’re really busy at work and a colleague is telling you their life story and personal woes. You:',
+    answers: [
+      {
+        answerText: 'Don’t dare to interrupt them',
+        score: 25,
+      },
+      {
+        answerText:
+          'Think it’s more important to give them some of your time; work can wait',
+        score: 50,
+      },
+      { answerText: 'Listen, but with only with half an ear', score: 3 },
+      {
+        answerText:
+          'Interrupt and explain that you are really busy at the moment',
+         score: 100,
+      },
+    ],
+  },
+  {
+    questionText:
+      'You’ve been sitting in the doctor’s waiting room for more than 25 minutes. You:',
+    answers: [
+      {
+        answerText: 'Look at your watch every two minutes',
+        score: 25,
+      },
+      { answerText: 'Bubble with inner anger, but keep quiet', score: 2 },
+      {
+        answerText:
+          'Explain to other equally impatient people in the room that the doctor is always running late',
+        score: 75,
+      },
+      {
+        answerText:
+          'Complain in a loud voice, while tapping your foot impatiently',
+         score: 100,
+      },
+    ],
+  },
+  {
+    questionText:
+      'You’re having an animated discussion with a colleague regarding a project that you’re in charge of. You:',
+    answers: [
+      {
+        answerText: 'Don’t dare contradict them',
+        score: 25,
+      },
+      { answerText: 'Think that they are obviously right', score: 2 },
+      { answerText: 'Defend your own point of view, tooth and nail', score: 3 },
+      { answerText: 'Continuously interrupt your colleague', score: 4 },
+    ],
+  },
+  {
+    questionText: 'You are taking part in a guided tour of a museum. You:',
+    answers: [
+      {
+        answerText:
+          'Are a bit too far towards the back so don’t really hear what the guide is saying',
+        score: 25,
+      },
+      { answerText: 'Follow the group without question', score: 2 },
+      {
+        answerText: 'Make sure that everyone is able to hear properly',
+        score: 75,
+      },
+      {
+        answerText:
+          'Are right up the front, adding your own comments in a loud voice',
+         score: 100,
+      },
+    ],
+  },
+  {
+    questionText:
+      'During dinner parties at your home, you have a hard time with people who:',
+    answers: [
+      {
+        answerText: 'Ask you to tell a story in front of everyone else',
+        score: 25,
+      },
+      { answerText: 'Talk privately between themselves', score: 2 },
+      { answerText: 'Hang around you all evening', score: 3 },
+      {
+        answerText: 'Always drag the conversation back to themselves',
+         score: 100,
+      },
+    ],
+  },
+  {
+    questionText:
+      'You crack a joke at work, but nobody seems to have noticed. You:',
+    answers: [
+      {
+        answerText: 'Think it’s for the best — it was a lame joke anyway',
+        score: 25,
+      },
+      { answerText: 'Wait to share it with your friends after work', score: 2 },
+      {
+        answerText: 'Try again a bit later with one of your colleagues',
+        score: 75,
+      },
+      { answerText: 'Keep telling it until they pay attention', score: 4 },
+    ],
+  },
+  {
+    questionText: 'This morning, your agenda seems to be free. You:',
+    answers: [
+      {
+        answerText:
+          'Know that somebody will find a reason to come and bother you',
+        score: 25,
+      },
+      {
+        answerText:
+          'Heave a sigh of relief and look forward to a day without stress',
+        score: 50,
+      },
+      {
+        answerText:
+          'Question your colleagues about a project that’s been worrying you',
+        score: 75,
+      },
+      {
+        answerText:
+          'Pick up the phone and start filling up your agenda with meetings',
+         score: 100,
+      },
+    ],
+  },
+  {
+    questionText:
+      'During dinner, the discussion moves to a subject about which you know nothing at all. You:',
+    answers: [
+      {
+        answerText:
+          'Don’t dare show that you don’t know anything about the subject',
+        score: 25,
+      },
+      { answerText: 'Barely follow the discussion', score: 2 },
+      { answerText: 'Ask lots of questions to learn more about it', score: 3 },
+      { answerText: 'Change the subject of discussion', score: 4 },
+    ],
+  },
+  {
+    questionText:
+      'You’re out with a group of friends and there’s a person who’s quite shy and doesn’t talk much. You:',
+    answers: [
+      {
+        answerText:
+          'Notice that they’re alone, but don’t go over to talk with them',
+        score: 25,
+      },
+      { answerText: 'Go and have a chat with them', score: 2 },
+      { answerText: 'Shoot some friendly smiles in their direction', score: 3 },
+      { answerText: 'Hardly notice them at all', score: 4 },
+    ],
+  },
+  {
+    questionText:
+      'At work, somebody asks for your help for the hundredth time. You:',
+    answers: [
+      {
+        answerText: 'Give them a hand, as usual',
+        score: 25,
+      },
+      { answerText: 'Accept — you’re known for being helpful', score: 2 },
+      {
+        answerText: 'Ask them, please, to find somebody else for a change',
+        score: 75,
+      },
+      { answerText: 'Loudly make it known that you’re annoyed', score: 4 },
+    ],
+  },
+  {
+    questionText:
+      'You’ve been see a movie with your family and the reviews are mixed. You:',
+    answers: [
+      {
+        answerText: 'Don’t share your point of view with anyone',
+        score: 25,
+      },
+      {
+        answerText:
+          'Didn’t like the film, but keep your views to yourself when asked',
+        score: 50,
+      },
+      { answerText: 'State your point of view with enthusiasm', score: 3 },
+      {
+        answerText: 'Try to bring the others round to your point of view',
+         score: 100,
+      },
+    ],
+  },
+  {
+    questionText: 'A friend arrives late for your meeting. You:',
+    answers: [
+      {
+        answerText:
+          'Say, ‘It’s not a problem,’ even if that’s not what you really think',
+        score: 25,
+      },
+      {
+        answerText:
+          'Give them a filthy look and sulk for the rest of the evening',
+        score: 50,
+      },
+      {
+        answerText: 'Tell them, ‘You’re too much! Have you seen the time?’',
+        score: 75,
+      },
+      { answerText: 'Make a scene in front of everyone', score: 4 },
+    ],
+  },
+  {
+    questionText: 'You can’t find your car keys. You:',
+    answers: [
+      {
+        answerText:
+          'Don’t want anyone to find out, so you take the bus instead',
+        score: 25,
+      },
+      {
+        answerText: 'Panic and search madly without asking anyone for help',
+        score: 50,
+      },
+      {
+        answerText:
+          'Grumble without telling your family why you’re in a bad mood',
+        score: 75,
+      },
+      { answerText: 'Accuse those around you for misplacing them', score: 4 },
+    ],
+  },
+  {
+    questionText: 'It’s time for your annual appraisal with your boss. You:',
+    answers: [
+      {
+        answerText:
+          'Go with great hesitation as these sessions are torture for you',
+        score: 25,
+      },
+      {
+        answerText:
+          'Look forward to hearing what your boss thinks about you and expects from you',
+        score: 50,
+      },
+      {
+        answerText:
+          'Rehearse ad nauseam the arguments and ideas that you’ve prepared for the meeting',
+        score: 75,
+      },
+      {
+        answerText:
+          'Go along unprepared as you are confident and like improvising',
+         score: 100,
+      },
+    ],
+  },
+];
+export default data;

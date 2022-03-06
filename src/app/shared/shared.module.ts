@@ -4,7 +4,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
 import { ShellComponent } from './shell/shell.component';
 
-
 import { MatIconModule } from '@angular/material/icon';
 // import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
@@ -15,10 +14,9 @@ import { MatCardModule } from '@angular/material/card';
 // import { MatFormFieldModule } from '@angular/material/form-field';
 // import { MatInputModule } from '@angular/material/input';
 // import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
 
-const components = [
-  ShellComponent
-]
+const components = [ShellComponent];
 
 const modules = [
   CommonModule,
@@ -28,19 +26,13 @@ const modules = [
   MatListModule,
   MatIconModule,
   MatButtonModule,
-  MatCardModule
+  MatCardModule,
+  MatDialogModule,
 ];
 
 @NgModule({
-  declarations: [
-    ...components
-  ],
-  imports: [
-    ...modules,
-  ],
-  exports: [
-    ...components,
-    ...modules
-  ],
+  declarations: [...components],
+  imports: [...modules],
+  exports: [...components, ...modules],
 })
 export class SharedModule {}

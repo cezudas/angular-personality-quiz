@@ -1,11 +1,10 @@
 <div class="quiz-container">
   <ng-container *ngIf="showResults$ | async; else questionBlock">
-    <div class="quiz-results">
-      <div class="greetings"></div>
-    </div>
-    <div>You have managed to complete the quiz. Your overall score is :??</div>
+    <quiz-result></quiz-result>
 
-    <button mat-raised-button (click)="restart()">Take the quiz again</button>
+    <button color="accent" mat-raised-button (click)="restart()">
+      Take the quiz again
+    </button>
   </ng-container>
   <ng-template #questionBlock>
     <span class="question-text"
@@ -13,7 +12,14 @@
       {{ questionLength$ | async }}</span
     >
     <quiz-question></quiz-question>
+    <button
+      class="next-question"
+      color="primary"
+      mat-raised-button
+      [disabled]="(selectedAnswerIdx$ | async) === undefined"
+      (click)="nextQuestion()"
+    >
+      Next question
+    </button>
   </ng-template>
-
-  <button mat-raised-button (click)="nextQuestion()">Next question</button>
 </div>

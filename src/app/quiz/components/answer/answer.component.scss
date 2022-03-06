@@ -7,6 +7,18 @@
     border: 0.0625rem solid #ccd6e0;
     border-radius: 0.25rem;
     padding: 10px;
+    user-select: none;
+}
+
+:host(.selected) {
+    border-color: #ec6584;
+    .letter {
+        background-color: #ec6584;
+        color: #fff;
+    }
+    .text {
+        font-weight: bold;
+    }
 }
 
 .letter {

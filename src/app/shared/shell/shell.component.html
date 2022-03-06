@@ -31,7 +31,7 @@
 
       <span class="fill-space"></span>
       <div *ngIf="(isHandset$ | async) === false">
-        <a mat-button routerLink="/quiz">Start quiz now</a>
+        <a mat-button color="primary" [routerLinkActive]="'quiz-activated'" routerLink="/quiz">Start quiz now</a>
       </div>
     </mat-toolbar>
 

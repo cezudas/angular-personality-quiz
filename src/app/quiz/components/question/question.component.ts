@@ -10,6 +10,8 @@ import { QuizService } from '../../services/quiz.service';
 export class QuestionComponent implements OnInit {
 
   question$ = this.quizService.state$.pipe(map(state => state.questions[state.currentQuestionIdx]));
+  selectedAnswerIdx$ = this.quizService.state$.pipe(map(state => state.currentQuestionAnswerIdx));
+  
   constructor(private quizService: QuizService) {}
 
   ngOnInit(): void {

@@ -1,6 +1,6 @@
 <ng-container *ngIf="(question$ | async) as question">
     <div class="question">{{question.questionText}}</div>
     <div class="answers">
-        <quiz-answer [index]="indexOfAnswer" [data]="answer" *ngFor="let answer of question.answers; let indexOfAnswer = index"></quiz-answer>
+        <quiz-answer [index]="indexOfAnswer" [selected]="(selectedAnswerIdx$ | async) === indexOfAnswer" [data]="answer" *ngFor="let answer of question.answers; let indexOfAnswer = index"></quiz-answer>
     </div>
 </ng-container>
