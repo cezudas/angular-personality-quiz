@@ -21,7 +21,7 @@ export class AnswerComponent implements OnInit {
   data!: QuizQuestionAnswer;
 
 
-  text$ = this.quizService.state$.pipe(map(state => state.currentQuestionAnswers[this.index].answerText));
+  text$ = this.quizService.state$.pipe(map(state => state.currentQuestionAnswers[this.index]?.answerText));
   letter!: string;
 
   constructor(private quizService: QuizService) { }

@@ -9,13 +9,14 @@ import {
 import { Component } from '@angular/core';
 import { UrlTree } from '@angular/router';
 import { map, Observable } from 'rxjs';
+import { PersonalityService } from '../../services/personality.service';
 import { QuizService } from '../../services/quiz.service';
 
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
   styleUrls: ['./quiz.component.scss'],
-  providers: [QuizService],
+  providers: [QuizService, PersonalityService],
   animations: [
     trigger('nextQuestionAnimation', [
       transition(':enter, * => 0, * => -1', []),
@@ -89,7 +90,4 @@ export class QuizComponent {
     this.quizService.nextQuestion();
   }
 
-  restart(): void {
-    this.quizService.restart();
-  }
 }

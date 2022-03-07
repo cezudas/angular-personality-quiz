@@ -8,6 +8,7 @@ import { AnswerComponent } from './components/answer/answer.component';
 import { ResultComponent } from './components/result/result.component';
 import { LeaveQuizConfirmationComponent } from './components/leave-quiz-confirmation/leave-quiz-confirmation.component';
 import { DeactivateGuard } from './deactivate.guard';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { DeactivateGuard } from './deactivate.guard';
     CommonModule,
     SharedModule,
     QuizRoutingModule,
+    HttpClientModule
   ],
   providers: [
     DeactivateGuard

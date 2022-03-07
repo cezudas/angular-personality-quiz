@@ -1,4 +1,3 @@
-import { MainPersonalityTrait } from "./main-personality-trait";
 import { QuizQuestion } from "./quiz-question";
 import { QuizQuestionAnswer } from "./quiz-question-answer";
 
@@ -9,5 +8,4 @@ export interface QuizState {
     currentQuestionAnswerIdx?: number | undefined,
     quizScore: number,
     currentQuestionAnswers: QuizQuestionAnswer[];
-    personalityTraitResult?: MainPersonalityTrait | undefined
 }

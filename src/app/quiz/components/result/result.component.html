@@ -1,13 +1,20 @@
-
 <ng-container *ngIf="personalityTraitResult$ | async as result">
   <div>
     <p>
-      The quiz has finished. Your average extraversion score is {{ personalityScoreResult$ | async }} out
-      of 100.
+      The quiz has finished. Your average extraversion score is
+      {{ personalityScoreResult }} out of 100.
     </p>
   </div>
 
-  
   <h3>{{ result.summary }}</h3>
   <p>{{ result.description }}</p>
+
+  <button
+    class="restart-quiz"
+    color="accent"
+    mat-raised-button
+    (click)="restart()"
+  >
+    Take the quiz again
+  </button>
 </ng-container>
