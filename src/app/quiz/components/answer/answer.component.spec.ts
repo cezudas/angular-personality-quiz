@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { QuizService } from '../../services/quiz.service';
 
 import { AnswerComponent } from './answer.component';
 
@@ -8,7 +9,7 @@ describe('AnswerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AnswerComponent ]
+      declarations: [ AnswerComponent ], providers: [{provide: QuizService}]
     })
     .compileComponents();
   });

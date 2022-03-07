@@ -1,5 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { AnswerComponent } from '../answer/answer.component';
+import { QuestionComponent } from '../question/question.component';
 
 import { QuizComponent } from './quiz.component';
 
@@ -9,8 +12,8 @@ describe('QuizComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ QuizComponent ],
-      imports: [SharedModule]
+      declarations: [ QuizComponent, QuestionComponent, AnswerComponent ],
+      imports: [SharedModule, NoopAnimationsModule]
     })
     .compileComponents();
   });
