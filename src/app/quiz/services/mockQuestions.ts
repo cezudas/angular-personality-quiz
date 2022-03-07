@@ -14,7 +14,7 @@ const data: QuizQuestion[] = [
           'Think it’s more important to give them some of your time; work can wait',
         score: 50,
       },
-      { answerText: 'Listen, but with only with half an ear', score: 3 },
+      { answerText: 'Listen, but with only with half an ear',  score: 75 },
       {
         answerText:
           'Interrupt and explain that you are really busy at the moment',
@@ -30,7 +30,7 @@ const data: QuizQuestion[] = [
         answerText: 'Look at your watch every two minutes',
         score: 25,
       },
-      { answerText: 'Bubble with inner anger, but keep quiet', score: 2 },
+      { answerText: 'Bubble with inner anger, but keep quiet',  score: 50 },
       {
         answerText:
           'Explain to other equally impatient people in the room that the doctor is always running late',
@@ -51,9 +51,9 @@ const data: QuizQuestion[] = [
         answerText: 'Don’t dare contradict them',
         score: 25,
       },
-      { answerText: 'Think that they are obviously right', score: 2 },
-      { answerText: 'Defend your own point of view, tooth and nail', score: 3 },
-      { answerText: 'Continuously interrupt your colleague', score: 4 },
+      { answerText: 'Think that they are obviously right',  score: 50 },
+      { answerText: 'Defend your own point of view, tooth and nail',  score: 75 },
+      { answerText: 'Continuously interrupt your colleague',  score: 100 },
     ],
   },
   {
@@ -64,7 +64,7 @@ const data: QuizQuestion[] = [
           'Are a bit too far towards the back so don’t really hear what the guide is saying',
         score: 25,
       },
-      { answerText: 'Follow the group without question', score: 2 },
+      { answerText: 'Follow the group without question',  score: 50 },
       {
         answerText: 'Make sure that everyone is able to hear properly',
         score: 75,
@@ -84,8 +84,8 @@ const data: QuizQuestion[] = [
         answerText: 'Ask you to tell a story in front of everyone else',
         score: 25,
       },
-      { answerText: 'Talk privately between themselves', score: 2 },
-      { answerText: 'Hang around you all evening', score: 3 },
+      { answerText: 'Talk privately between themselves',  score: 50 },
+      { answerText: 'Hang around you all evening',  score: 75 },
       {
         answerText: 'Always drag the conversation back to themselves',
          score: 100,
@@ -100,12 +100,12 @@ const data: QuizQuestion[] = [
         answerText: 'Think it’s for the best — it was a lame joke anyway',
         score: 25,
       },
-      { answerText: 'Wait to share it with your friends after work', score: 2 },
+      { answerText: 'Wait to share it with your friends after work',  score: 50 },
       {
         answerText: 'Try again a bit later with one of your colleagues',
         score: 75,
       },
-      { answerText: 'Keep telling it until they pay attention', score: 4 },
+      { answerText: 'Keep telling it until they pay attention',  score: 100 },
     ],
   },
   {
@@ -142,9 +142,9 @@ const data: QuizQuestion[] = [
           'Don’t dare show that you don’t know anything about the subject',
         score: 25,
       },
-      { answerText: 'Barely follow the discussion', score: 2 },
-      { answerText: 'Ask lots of questions to learn more about it', score: 3 },
-      { answerText: 'Change the subject of discussion', score: 4 },
+      { answerText: 'Barely follow the discussion',  score: 50 },
+      { answerText: 'Ask lots of questions to learn more about it',  score: 75 },
+      { answerText: 'Change the subject of discussion',  score: 100 },
     ],
   },
   {
@@ -156,9 +156,9 @@ const data: QuizQuestion[] = [
           'Notice that they’re alone, but don’t go over to talk with them',
         score: 25,
       },
-      { answerText: 'Go and have a chat with them', score: 2 },
-      { answerText: 'Shoot some friendly smiles in their direction', score: 3 },
-      { answerText: 'Hardly notice them at all', score: 4 },
+      { answerText: 'Go and have a chat with them',  score: 50 },
+      { answerText: 'Shoot some friendly smiles in their direction',  score: 75 },
+      { answerText: 'Hardly notice them at all',  score: 100 },
     ],
   },
   {
@@ -169,12 +169,12 @@ const data: QuizQuestion[] = [
         answerText: 'Give them a hand, as usual',
         score: 25,
       },
-      { answerText: 'Accept — you’re known for being helpful', score: 2 },
+      { answerText: 'Accept — you’re known for being helpful',  score: 50 },
       {
         answerText: 'Ask them, please, to find somebody else for a change',
         score: 75,
       },
-      { answerText: 'Loudly make it known that you’re annoyed', score: 4 },
+      { answerText: 'Loudly make it known that you’re annoyed',  score: 100 },
     ],
   },
   {
@@ -190,7 +190,7 @@ const data: QuizQuestion[] = [
           'Didn’t like the film, but keep your views to yourself when asked',
         score: 50,
       },
-      { answerText: 'State your point of view with enthusiasm', score: 3 },
+      { answerText: 'State your point of view with enthusiasm',  score: 75 },
       {
         answerText: 'Try to bring the others round to your point of view',
          score: 100,
@@ -214,7 +214,7 @@ const data: QuizQuestion[] = [
         answerText: 'Tell them, ‘You’re too much! Have you seen the time?’',
         score: 75,
       },
-      { answerText: 'Make a scene in front of everyone', score: 4 },
+      { answerText: 'Make a scene in front of everyone',  score: 100 },
     ],
   },
   {
@@ -234,7 +234,7 @@ const data: QuizQuestion[] = [
           'Grumble without telling your family why you’re in a bad mood',
         score: 75,
       },
-      { answerText: 'Accuse those around you for misplacing them', score: 4 },
+      { answerText: 'Accuse those around you for misplacing them',  score: 100 },
     ],
   },
   {

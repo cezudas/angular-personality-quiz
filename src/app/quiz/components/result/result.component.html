@@ -1,12 +1,13 @@
-<div>
-  <span>You have completed the quiz. </span>
-  <p>
-    Your average extraversion score is {{ personalityScoreResult$ | async }} out of 100.
-  </p>
-</div>
+
 <ng-container *ngIf="personalityTraitResult$ | async as result">
+  <div>
+    <p>
+      The quiz has finished. Your average extraversion score is {{ personalityScoreResult$ | async }} out
+      of 100.
+    </p>
+  </div>
+
+  
   <h3>{{ result.summary }}</h3>
-  <p>
-    {{ result.description }}
-  </p>
+  <p>{{ result.description }}</p>
 </ng-container>

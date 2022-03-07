@@ -2,7 +2,7 @@ import { PersonalityMatch } from '../types/personality-match';
 
 const data: PersonalityMatch[] = [
   {
-    minScore: 25,
+    minScore: 1,
     maxScore: 49,
     personalityTrait: {
       summary: 'You are more of an introvert',

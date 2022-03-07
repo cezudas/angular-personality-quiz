@@ -8,6 +8,7 @@ import {
 } from '@angular/router';
 import { Observable, Observer } from 'rxjs';
 import { LeaveQuizConfirmationComponent } from './components/leave-quiz-confirmation/leave-quiz-confirmation.component';
+import { QuizComponent } from './components/quiz/quiz.component';
 
 @Injectable({
   providedIn: 'root',
@@ -15,15 +16,17 @@ import { LeaveQuizConfirmationComponent } from './components/leave-quiz-confirma
 export class DeactivateGuard implements CanDeactivate<unknown> {
   constructor(private modalService: MatDialog) {}
   canDeactivate(
-    component: unknown,
-    currentRoute: ActivatedRouteSnapshot,
-    currentState: RouterStateSnapshot,
-    nextState?: RouterStateSnapshot
+    component: QuizComponent
   ):
     | Observable<boolean | UrlTree>
     | Promise<boolean | UrlTree>
     | boolean
     | UrlTree {
+      
+     if(component.canDeactivate()) {
+       return true;
+     }
+
     return new Observable((observer: Observer<boolean>) => {
       let dialogRef = this.modalService.open(LeaveQuizConfirmationComponent, {
         width: '600px',

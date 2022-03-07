@@ -45,6 +45,7 @@ export class QuizService {
     const newQuizScore = showResults
       ? Math.floor(quizScore / questions.length)
       : quizScore + selectedAnswerScore;
+
     const personalityTraitResult = showResults
       ? this.personalityService.determinePersonalityTrait(newQuizScore)
       : undefined;

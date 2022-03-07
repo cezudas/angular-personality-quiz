@@ -1,17 +1,30 @@
-<div class="quiz-container">
-  <ng-container *ngIf="showResults$ | async; else questionBlock">
-    <quiz-result></quiz-result>
+<div
+  class="quiz-container"
+  [@nextQuestionAnimation]="currentQuestionCounter$ | async"
+>
+  <ng-container *ngIf="showResults$ | async as showResults; else questionBlock">
+    <div class="quiz-result-container" @enterQuizResultsAnimation>
+      <quiz-result></quiz-result>
 
-    <button color="accent" mat-raised-button (click)="restart()">
-      Take the quiz again
-    </button>
+      <button
+        class="restart-quiz"
+        color="accent"
+        mat-raised-button
+        (click)="restart()"
+      >
+        Take the quiz again
+      </button>
+    </div>
   </ng-container>
   <ng-template #questionBlock>
-    <span class="question-text"
-      >Question {{ currentQuestionCounter$ | async }} /
-      {{ questionLength$ | async }}</span
-    >
-    <quiz-question></quiz-question>
+    <div class="question-wrapper">
+      <span class="question-text"
+        >Question {{ currentQuestionCounter$ | async }} /
+        {{ questionLength$ | async }}</span
+      >
+      <quiz-question></quiz-question>
+    </div>
+
     <button
       class="next-question"
       color="primary"
